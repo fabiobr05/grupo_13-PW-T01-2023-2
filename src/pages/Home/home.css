@@ -1,0 +1,123 @@
+:root{
+    --cor-background-body1: #24204A;
+    --cor-background-body1-1: #060567d8;
+    --cor-background-body2: #071341;
+    /* --------------------------------------- */
+    --cor-background-icon-ranking-filmes:#FF6853;
+    --cor-background-icon-ranking-geografia:#FF537C;
+    --cor-background-icon-ranking-matematica:#80D2C4;
+    --cor-background-icon-ranking-financas:#3F50E7;
+    --cor-background-icon-ranking-musica:#95CB7C;
+}
+
+.light {
+    color: white;
+}
+
+.secao2{
+    /* height: 100vh; */
+    background: var(--cor-background-body2);
+    padding-top: 10px;
+    /*display: flex;
+    align-items: center;
+    justify-content: center;*/
+    padding-bottom: 5%;
+}
+
+.cabecalho-ranking {
+    text-align: center;
+    padding-top: 1%;
+    padding-bottom: 1%;
+}
+
+/* Estilo da pagina do ranking */
+.cabecalho-ranking {
+    text-align: center;
+    padding-top: 1%;
+    padding-bottom: 1%;
+}
+
+.quadrado-ranking{
+    width: 20px; /* Largura do quadrado */
+    height: 20px; /* Altura do quadrado */
+    border: 2px solid #333; /* Borda de 2px sólida com cor #333 */
+    padding: 10%;
+    align-items: center;
+}
+
+.icon-Filmes {
+    background-color: var(--cor-background-icon-ranking-filmes);
+    border-radius: 10%; /* Bordas arredondadas para criar um quadrado */
+    width: 100%; /* Largura do quadrado */
+    height: 100%; /* Altura do quadrado */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.icon-Geografia {
+    background-color: var(--cor-background-icon-ranking-geografia);
+    border-radius: 10%; /* Bordas arredondadas para criar um quadrado */
+    width: 100%; /* Largura do quadrado */
+    height: 100%; /* Altura do quadrado */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.icon-Matematica {
+    background-color: var(--cor-background-icon-ranking-matematica);
+    border-radius: 10%; /* Bordas arredondadas para criar um quadrado */
+    width: 100%; /* Largura do quadrado */
+    height: 100%; /* Altura do quadrado */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.icon-Financas {
+    background-color: var(--cor-background-icon-ranking-financas);
+    border-radius: 10%; /* Bordas arredondadas para criar um quadrado */
+    width: 100%; /* Largura do quadrado */
+    height: 100%; /* Altura do quadrado */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.icon-Musica {
+    background-color: var(--cor-background-icon-ranking-musica);
+    border-radius: 10%; /* Bordas arredondadas para criar um quadrado */
+    width: 100%; /* Largura do quadrado */
+    height: 100%; /* Altura do quadrado */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.icon{
+    max-width: 100%;
+    max-height: 100%;
+    border-radius: 30%; /* Bordas arredondadas para a imagem */
+    font-size: 30px;
+}
+
+.text-ranking{
+    text-align: center;
+}
+ 
+.square-ranking {
+    width: 22%;
+    padding-top: 2.5%;
+    border: 2px solid #ccc;
+    border-radius: 10px;
+    margin: 1%;
+    /* display: flex; */
+    justify-content: center;
+    align-items: center;
+    /* font-size: 4vw; */
+}
+
+@media (max-width: 768px) {
+    .square {
+        width: 45%;
+        padding-top: 45%;
+        font-size: 6vw;
+    }
+}
