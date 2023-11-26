@@ -149,24 +149,6 @@ function Jogo() {
         return () => clearInterval(interval);
     }, [timer]);
 
-    useEffect(() => {
-        const handleWindowClose = (event) => {
-          event.preventDefault();
-          event.returnValue = '';
-          const confirmationMessage = 'Tem certeza que deseja sair? Todas as respostas não enviadas serão perdidas.';
-          event.returnValue = confirmationMessage;
-          return confirmationMessage;
-        };
-      
-        window.addEventListener('beforeunload', handleWindowClose);
-      
-        return () => {
-          window.removeEventListener('beforeunload', handleWindowClose);
-        };
-    }, [questionIndex]);
-      
-
-
     return (
         <div className="tela-jogo light">
             <div className="container" style = {{marginTop: '2%'}}>
