@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom'; // Importe o Link para navegação inte
 
 import './home.css';
 import 'bootstrap/dist/css/bootstrap.css';
-import { auth, db } from "../../services/firebaseConnection";
+import {db } from "../../services/firebaseConnection";
 // import 'bootstrap/dist/js/bootstrap.js';
 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
@@ -14,15 +14,11 @@ import { faVideo
         ,faMusic 
         } from '@fortawesome/free-solid-svg-icons';
 import {
-  addDoc,
   collection,
   onSnapshot,
   query,
   orderBy,
   where,
-  doc,
-  deleteDoc,
-  updateDoc,
 } from "firebase/firestore";
 
 const calcularRanking = (respostasObjeto) => {

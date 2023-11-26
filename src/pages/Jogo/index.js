@@ -43,12 +43,12 @@ function Jogo() {
             setQuestionIndex(questionIndex + 1);
         } else {
             // Quando chegar à última questão, você pode reiniciar ou fazer alguma outra ação
-            alert("Parabéns, você completou todas as questões!");
+            //alert("Parabéns, você completou todas as questões!");
+            toast.success("Parabéns, você completou todas as questões!");
             // Para reiniciar, você pode fazer: setQuestionIndex(0);
             navigate("/pontuacaoJogador", { replace: true }); //Ainda vou construir essa pagina
         }
     };
-
 
     useEffect(() => {
         let alternativasLocal;
@@ -115,6 +115,8 @@ function Jogo() {
         // } catch (e) {
         //     alert("ERRO AO REGISTRAR " + e);
         // }
+
+
     }
 
     const [contador, setContador] = useState(1);
@@ -138,14 +140,31 @@ function Jogo() {
             } else {
                 clearInterval(interval);
                 toast.warn("Tempo Esgotado");
-                // Lógica para o que acontece quando o tempo se esgota
+                // Lógica para o que acontece quando o tempo acaba
                 setQuestionIndex(questionIndex+1);
                 proximaQuestao();
                 //setTimer(30);
             }
         }, 1000);
-        return () => clearInterval(interval); // Limpando o intervalo quando o componente é desmontado
+        return () => clearInterval(interval);
     }, [timer]);
+
+    useEffect(() => {
+        const handleWindowClose = (event) => {
+          event.preventDefault();
+          event.returnValue = '';
+          const confirmationMessage = 'Tem certeza que deseja sair? Todas as respostas não enviadas serão perdidas.';
+          event.returnValue = confirmationMessage;
+          return confirmationMessage;
+        };
+      
+        window.addEventListener('beforeunload', handleWindowClose);
+      
+        return () => {
+          window.removeEventListener('beforeunload', handleWindowClose);
+        };
+    }, [questionIndex]);
+      
 
 
     return (

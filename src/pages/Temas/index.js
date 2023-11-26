@@ -36,6 +36,11 @@ function Temas() {
                                     </Link>
                                 </li>
                                 <li>
+                                    <Link role="button" to="/jogo/musica" className="btn p-3 px-5 rounded-pill new-buttons" >
+                                        Música
+                                    </Link>
+                                </li>
+                                <li>
                                     <Link role="button" to="/jogo/financas" className="btn p-3 px-5 rounded-pill new-buttons" >
                                         Finanças
                                     </Link>

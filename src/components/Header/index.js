@@ -46,19 +46,19 @@ function Navbar() {
             <div className="collapse navbar-collapse justify-content-center" id="navbarNav">
               <ul className="navbar-nav">
                 <li className="nav-item">
-                  <Link to="/filmes" className="nav-link">Filmes</Link> {/* Use Link para navegação interna */}
+                  <Link to="/jogo/filmes" className="nav-link">Filmes</Link> {/* Use Link para navegação interna */}
                 </li>
                 <li className="nav-item">
-                  <Link to="/geografia" className="nav-link">Geografia</Link> {/* Use Link para navegação interna */}
+                  <Link to="/jogo/geografia" className="nav-link">Geografia</Link> {/* Use Link para navegação interna */}
                 </li>
                 <li className="nav-item">
-                  <Link to="/matematica" className="nav-link">Matemática</Link> {/* Use Link para navegação interna */}
+                  <Link to="/jogo/matematica" className="nav-link">Matemática</Link> {/* Use Link para navegação interna */}
                 </li>
                 <li className="nav-item">
-                  <Link to="/financas" className="nav-link">Finanças</Link> {/* Use Link para navegação interna */}
+                  <Link to="/jogo/financas" className="nav-link">Finanças</Link> {/* Use Link para navegação interna */}
                 </li>
                 <li className="nav-item">
-                  <Link to="/musica" className="nav-link">Música</Link> {/* Use Link para navegação interna */}
+                  <Link to="/jogo/musica" className="nav-link">Música</Link> {/* Use Link para navegação interna */}
                 </li>
               </ul>
             </div>

@@ -16,16 +16,16 @@ function Footer(){
                   <h6>Principais Temas</h6>
               </li>
               <li>
-                  <a href="/filmes" className="footer-link">Filmes</a>
+                  <a href="/jogo/filmes" className="footer-link">Filmes</a>
               </li>
               <li>
-                  <a href="/geografia" className="footer-link">Geografia</a>
+                  <a href="/jogo/geografia" className="footer-link">Geografia</a>
               </li>
               <li>
-                  <a href="/matematica" className="footer-link">Matematica</a>
+                  <a href="/jogo/matematica" className="footer-link">Matematica</a>
               </li>
               <li>
-                <a href="/financas" className="footer-link">Finanças</a>
+                <a href="/jogo/financas" className="footer-link">Finanças</a>
               </li>
             </ul>
             
@@ -34,19 +34,19 @@ function Footer(){
                     <h6>Outros</h6>
                 </li>
                 <li>
-                    <a href="/esportesEatletas" className="footer-link">Esportes e Atletas</a>
+                    <a href="/jogo/esportes" className="footer-link">Esportes e Atletas</a>
                 </li>
                 <li>
-                    <a href="celebridasEfamosos" className="footer-link">Celebridades e Famosos</a>
+                    <a href="jogo/celebridades" className="footer-link">Celebridades e Famosos</a>
                 </li>
                 <li>
-                    <a href="/animais" className="footer-link">Animais e Vida Selvagem</a>
+                    <a href="/jogo/animais" className="footer-link">Animais e Vida Selvagem</a>
                 </li>
                 <li>
-                  <a href="/saude" className="footer-link">Saúde e Bem-Estar</a>
+                  <a href="/jogo/saude" className="footer-link">Saúde e Bem-Estar</a>
               </li>
               <li>
-                  <a href="/religiao" className="footer-link">Religião e Espiritualidade</a>
+                  <a href="/jogo/religiao" className="footer-link">Religião e Espiritualidade</a>
               </li>
             </ul>
   

@@ -312,4 +312,212 @@ export const dados = {
             correta: "Stefani Joanne Angelina Germanotta"
         },
     ],
+    musica: [
+        {
+            pergunta: "Qual é o álbum mais vendido de todos os tempos?",
+            alternativas: [
+                "Thriller - Michael Jackson",
+                "Back in Black - AC/DC",
+                "The Dark Side of the Moon - Pink Floyd",
+                "Bat Out of Hell - Meat Loaf"
+            ],
+            correta: "Thriller - Michael Jackson"
+        },
+        {
+            pergunta: "Quem é considerado o Rei do Rock and Roll?",
+            alternativas: [
+                "Elvis Presley",
+                "Chuck Berry",
+                "Buddy Holly",
+                "Little Richard"
+            ],
+            correta: "Elvis Presley"
+        },
+        {
+            pergunta: "Qual é o instrumento musical mais tocado no mundo?",
+            alternativas: [
+                "Violão",
+                "Piano",
+                "Bateria",
+                "Violino"
+            ],
+            correta: "Violão"
+        },
+        {
+            pergunta: "Qual banda é conhecida como 'Os Fab Four'?",
+            alternativas: [
+                "The Rolling Stones",
+                "The Beatles",
+                "Led Zeppelin",
+                "Queen"
+            ],
+            correta: "The Beatles"
+        },
+        {
+            pergunta: "Qual foi a primeira música de videoclipe exibida na MTV?",
+            alternativas: [
+                "Billie Jean - Michael Jackson",
+                "Video Killed the Radio Star - The Buggles",
+                "Thriller - Michael Jackson",
+                "Money for Nothing - Dire Straits"
+            ],
+            correta: "Video Killed the Radio Star - The Buggles"
+        }
+    ],
+    animais: [
+        {
+            pergunta: "Qual é o animal terrestre mais rápido?",
+            alternativas: [
+                "Guepardo",
+                "Antílope Saiga",
+                "Lebre",
+                "Leopardo"
+            ],
+            correta: "Guepardo"
+        },
+        {
+            pergunta: "Qual é o maior animal do mundo?",
+            alternativas: [
+                "Elefante Africano",
+                "Baleia Azul",
+                "Girafa",
+                "Tubarão Branco"
+            ],
+            correta: "Baleia Azul"
+        },
+        {
+            pergunta: "Quais animais são popularmente conhecidos como marsupiais?",
+            alternativas: [
+                "Cangurus e Coalas",
+                "Esquilos e Porcos-espinhos",
+                "Leões e Tigres",
+                "Ratos e Hamsters"
+            ],
+            correta: "Cangurus e Coalas"
+        },
+        {
+            pergunta: "Qual é o único mamífero capaz de voar?",
+            alternativas: [
+                "Pássaro-morcego",
+                "Esquilo",
+                "Pombo",
+                "Ornitorrinco"
+            ],
+            correta: "Pássaro-morcego"
+        },
+        {
+            pergunta: "Qual é o animal que tem a mordida mais poderosa do reino animal?",
+            alternativas: [
+                "Hipopótamo",
+                "Cobra",
+                "Crocodilo",
+                "Leão"
+            ],
+            correta: "Crocodilo"
+        }
+    ],
+    saude: [
+        {
+            pergunta: "Qual é a principal causa de cáries dentárias?",
+            alternativas: [
+                "Falta de higiene bucal",
+                "Consumo excessivo de doces",
+                "Má alimentação",
+                "Genética"
+            ],
+            correta: "Falta de higiene bucal"
+        },
+        {
+            pergunta: "Qual é a recomendação diária média de sono para um adulto saudável?",
+            alternativas: [
+                "6 horas",
+                "8 horas",
+                "10 horas",
+                "Varia de pessoa para pessoa"
+            ],
+            correta: "8 horas"
+        },
+        {
+            pergunta: "Qual é a vitamina encontrada principalmente na luz solar e essencial para a saúde dos ossos?",
+            alternativas: [
+                "Vitamina C",
+                "Vitamina B12",
+                "Vitamina D",
+                "Vitamina A"
+            ],
+            correta: "Vitamina D"
+        },
+        {
+            pergunta: "Qual é o principal benefício da prática regular de exercícios físicos?",
+            alternativas: [
+                "Perda de peso",
+                "Fortalecimento muscular",
+                "Melhora do humor e da saúde mental",
+                "Aumento da altura"
+            ],
+            correta: "Melhora do humor e da saúde mental"
+        },
+        {
+            pergunta: "Qual é a melhor fonte de hidratação para o corpo humano?",
+            alternativas: [
+                "Refrigerantes",
+                "Suco de frutas",
+                "Água",
+                "Café"
+            ],
+            correta: "Água"
+        }
+    ],
+    religiao: [
+        {
+            pergunta: "Quem é considerado o fundador do Islamismo?",
+            alternativas: [
+                "Maomé",
+                "Buda",
+                "Jesus Cristo",
+                "Abraão"
+            ],
+            correta: "Maomé"
+        },
+        {
+            pergunta: "Qual é o livro sagrado do Judaísmo?",
+            alternativas: [
+                "Bíblia",
+                "Talmude",
+                "Torá",
+                "Corão"
+            ],
+            correta: "Torá"
+        },
+        {
+            pergunta: "Quem é o principal Deus do Hinduísmo?",
+            alternativas: [
+                "Brama",
+                "Shiva",
+                "Vishnu",
+                "Krishna"
+            ],
+            correta: "Brama"
+        },
+        {
+            pergunta: "Qual é o evento central na vida de Siddhartha Gautama, o Buda?",
+            alternativas: [
+                "A crucificação",
+                "A iluminação",
+                "O êxodo",
+                "A ressurreição"
+            ],
+            correta: "A iluminação"
+        },
+        {
+            pergunta: "Qual é o país com o maior número de adeptos do Cristianismo no mundo?",
+            alternativas: [
+                "Estados Unidos",
+                "Brasil",
+                "Índia",
+                "China"
+            ],
+            correta: "Estados Unidos"
+        }
+    ]     
 }

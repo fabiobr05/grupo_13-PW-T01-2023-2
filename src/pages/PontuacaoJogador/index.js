@@ -1,7 +1,9 @@
+import React from 'react';
 import { Link } from "react-router-dom";
 import "./pontuacaoJogador.css";
 import { useState, useEffect } from "react";
 import {db } from "../../services/firebaseConnection";
+import DonutChart from '../../components/DonutChart';
 // import { signOut } from "firebase/auth";
 //import { Pie } from '@nivo/pie';
 import {
@@ -23,10 +25,8 @@ import {
 // quando o usuário tentar acessar uma rota que não existe ou não foi criada
 function PontuacaoJogador() {
 
-    const [user, setUser] = useState({});
+    
     const [questoes, setQuestoes] = useState([]);
-    // const [erros, setErros] = useState(0);
-    // const [acertos, setAcertos] = useState(0);
 
     // Carrega as tarefas do usuário logado no sistema ao acessar a rota /admin da aplicação e ao atualizar a página
     useEffect(() => {
@@ -36,7 +36,7 @@ function PontuacaoJogador() {
         // JSON.parse é utilizado para converter a string JSON em um objeto JavaScript novamente e armazenar na variável data o objeto userData
         const userDetail = localStorage.getItem("@detailUser");
         // setUser é utilizado para armazenar o objeto userData na variável user
-        setUser(JSON.parse(userDetail));
+        //setUser(JSON.parse(userDetail));
 
         // Verifica se o usuário está logado utilizando o objeto user retornado pelo localStorage.getItem
         if (userDetail) {
@@ -53,7 +53,7 @@ function PontuacaoJogador() {
 
             // onSnapshot é utilizado para recuperar os dados da consulta realizada na coleção tarefas do banco de dados Firestore do Firebase
             // e atualizar a variável tarefas com os dados retornados da consulta
-            const unsub = onSnapshot(q, (snapshot) => {
+            /*const unsub =*/ onSnapshot(q, (snapshot) => {
             let lista = [];
 
             snapshot.forEach((doc) => {
@@ -78,8 +78,8 @@ function PontuacaoJogador() {
     console.log(questoes);
     let acertos = 0;
     let erros = 0;
-    for (let i = 0; i < questoes.length; i++) {
-        if (questoes[i].resposta === questoes[i].correta) {
+    for (let i = 0; i < 5/*questoes.length*/; i++) {
+        if (questoes[i]?.resposta === questoes[i]?.correta) {
             acertos += 1;
         } else {
             erros += 1;
@@ -105,19 +105,21 @@ function PontuacaoJogador() {
       },
     ];
 
-
   return (
     <div className="principal">
-      <p>Sua pontuação!</p>
+      <h5>Sua pontuação!</h5>
       <div>
-        <p>Total de acertou: {acertos}</p>
-        <p>Total de errou: {erros}</p>
+        <p className='pontuacao'>Total de acertou: {acertos}</p>
+        <p className='pontuacao'>Total de errou: {erros}</p>
+        <div /*className="chart-container" style={{ width: "300px", height: "300px" }}*/>
+          <DonutChart data={dataNew} />
+        </div>
       </div>
       <div>
           <h3>Questões feitas anteriormente</h3>
           {questoes.map((questao, index) => (
             <div key={index}>
-              <p>Pergunta {index + 1}:</p>
+              <p>Pergunta {(index + 1)}:</p>
               <p>Tema: {questao.tema}</p>
               <p>Pergunta: {questao.pergunta}</p>
               <p>Resposta: {questao.resposta}</p>
