@@ -25,7 +25,9 @@ Vamos utilizar para esse projeto:
 # Clone o repositorio
 git clone https://github.com/fabiobr05/grupo_13-PW-T01-2023-2.git
 # Instale todas as dependencias
-npm install
+npm install 
+# Ou caso acuse erro:
+npm install --force
 # Inicie o projeto
 npm start
 ```
